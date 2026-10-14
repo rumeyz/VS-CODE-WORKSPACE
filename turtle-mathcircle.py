@@ -2,17 +2,15 @@ import math
 import turtle
 
 t= turtle.Turtle()
-t.speed(100)
+t.speed(500)
 t.hideturtle()
 turtle.bgcolor("black")
 t.color("pink")
-t.penup()
-t.goto(100,0)
-t.pendown()
-for i in range(360):
+for i in range(2000):
+    a= 0.1*i
     r= math.radians(i)
-    x= 100*math.cos(r)
-    y= 100*math.sin(r)
+    x= a*math.cos(r)
+    y= a*math.sin(r)
     t.goto(x,y)
 
 turtle.done()
